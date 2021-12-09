@@ -22,8 +22,8 @@ export const Banner = styled.div`
     height: min(33vw, 199px);
     position: relative;
 
-    background: url('https://cdn.discordapp.com/attachments/681309726797201420/918566035764965426/11749827.jpg') no-repeat;
-    background-position: center;
+    background: url('https://media.discordapp.net/attachments/419592647255261184/918603786908475403/Emy_1.png?width=1335&height=445') no-repeat;
+    background-size: 100% 100%;
 `;
 export const Avatar = styled.div`
     width: max(45px, min(135px, 22vw));

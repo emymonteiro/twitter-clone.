@@ -1,6 +1,6 @@
 import styled,{css} from "styled-components";
 
-import { Chat, Favorite, Logo } from '../styles/Icons';
+import { Chat, Favorite, Logo, Share } from '../styles/Icons';
 
 export const Container = styled.div`
     display: flex;
@@ -26,7 +26,7 @@ export const TweetIcon = styled(Logo)`
     margin-left: 35px;
     margin-right: 9px;
     >path{
-        fill: var(--gray);
+        fill: var(--twitter);
     }
 `;
 export const Body = styled.div`
@@ -119,8 +119,26 @@ export const Status = styled.div`
     align-items: center;
 
     font-size: 14px;
+
     > svg{
         margin-right: 5px;
+    }
+    &:nth-child(1){
+        &, > svg path{
+            color: var(--gray);
+        }
+    }
+    &:nth-child(2){
+        color: var(--retweet);
+        > svg path{
+            fill: var(--retweet);
+        }
+    }
+    &:nth-child(3){
+        color: var(--like);
+        > svg{
+            fill: var(--like);
+        }
     }
 `;
 
@@ -132,7 +150,7 @@ const iconCSS = css`
 export const CommentIcon = styled(Chat)`
     ${iconCSS}
 `;
-export const RetweetIcon = styled(Logo)`
+export const RetweetIcon = styled(Share)`
     ${iconCSS}
 `;
 export const LikeIcon = styled(Favorite)`
