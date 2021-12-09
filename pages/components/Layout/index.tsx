@@ -1,7 +1,8 @@
-import { SideBar } from '@styled-icons/remix-fill';
+//import { SideBar } from '@styled-icons/remix-fill';
 import React from 'react';
 import Main from '../Main'
 import MenuBar from '../MenuBar'
+import SideBar from '../SideBar'
 
 import { Container, Wrapper } from './styles'
 
@@ -10,9 +11,10 @@ const layout: React.FC = () => {
       <Container>
           <Wrapper>
               <MenuBar />
-              
+
               <Main />
-              {/* <SideBar /> */}
+
+              <SideBar />
           </Wrapper>
       </Container>
   );
