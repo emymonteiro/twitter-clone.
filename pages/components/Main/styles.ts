@@ -67,6 +67,9 @@ export const BottomMenu = styled.div`
     justify-content: space-between;
 
     padding: 8px min(46px, max(10vw, 10px));
+    @media (min-width: 500px){
+        display: none;
+    }
 `;
 
 const iconCSS = css`
