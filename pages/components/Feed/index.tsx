@@ -10,9 +10,9 @@ const arr = [
       tag: '@Emy',
       desc: 'Minha mensagem no tweet',
       time: '09 de dez',
-      like: '12',
-      comments: '18',
-      retweetN: '100',
+      like: 32,
+      comments: 12,
+      retweetN: 999,
       retweet: true
     },
     { 
@@ -20,36 +20,9 @@ const arr = [
       tag: '@alisson',
       desc: 'Minha mensagem no tweet 2',
       time: '10 de dez',
-      like: '4452',
-      comments: '180',
-      retweetN: '999'
-    },
-    { 
-      nome: 'Alisson',
-      tag: '@alisson',
-      desc: 'Minha mensagem no tweet 2',
-      time: '10 de dez',
-      like: '4452',
-      comments: '180',
-      retweetN: '999'
-    },
-    { 
-      nome: 'Alisson',
-      tag: '@alisson',
-      desc: 'Minha mensagem no tweet 2',
-      time: '10 de dez',
-      like: '4452',
-      comments: '180',
-      retweetN: '999'
-    },
-    { 
-      nome: 'Alisson',
-      tag: '@alisson',
-      desc: 'Minha mensagem no tweet 2',
-      time: '10 de dez',
-      like: '4452',
-      comments: '180',
-      retweetN: '999'
+      like: 32,
+      comments: 12,
+      retweetN: 999
     },
 ]
 

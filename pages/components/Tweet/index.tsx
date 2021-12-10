@@ -8,9 +8,9 @@ interface Props{
     tag: string;
     desc: string;
     time: string;
-    like: string;
-    comments: string;
-    retweetN: string;
+    like: number;
+    comments: number;
+    retweetN: number;
 }
 
 const Tweet: React.FC<Props> = ({
