@@ -21,24 +21,20 @@ const SideBar: React.FC = () => {
           <StickyBox>
           <Body>
             <List title="Talvez você curta" elements={[
-                <FollowSuggestion
+                <FollowSuggestion key={0}
                     name="Vue"
                     nickname="@vuejs"
                 />,
-                <FollowSuggestion
+                <FollowSuggestion key={1}
                     name="React"
                     nickname="@reactjs"
                 />,
-                <FollowSuggestion
+                <FollowSuggestion key={2}
                     name="Svelte"
                     nickname="@sveltejs"
                 />,
             ]} />
-            <List title="Trending Topics" elements={[<News />,<News />,<News />]} />
-            <List title="Trending Topics" elements={[<News />,<News />,<News />]} />
-            <List title="Trending Topics" elements={[<News />,<News />,<News />]} />
-            <List title="Trending Topics" elements={[<News />,<News />,<News />]} />
-            <List title="Trending Topics" elements={[<News />,<News />,<News />]} />
+            <List title="Trending Topics" elements={[<News key={0} />,<News key={1} />,<News key={2} />]} />
           </Body>
           </StickyBox>
       </Container>
