@@ -2,10 +2,31 @@ import React from 'react';
 
 import { Container, Retweeted, TweetIcon, Body, Avatar, Content, Header, Dot, Description, ImageContent, Icons, Status, CommentIcon, RetweetIcon, LikeIcon  } from './styles';
 
-const Tweet: React.FC = () => {
+interface Props{
+    retweet?: boolean;
+    nome: string;
+    tag: string;
+    desc: string;
+    time: string;
+    like: string;
+    comments: string;
+    retweetN: string;
+}
+
+const Tweet: React.FC<Props> = ({
+    retweet,
+    nome,
+    tag,
+    desc,
+    time,
+    like,
+    comments,
+    retweetN,
+}) => {
   return (
       <Container>
-        <Retweeted>
+        
+        <Retweeted style={{display: retweet ? 'flex' : 'none'}}>
             <TweetIcon />
             Você retweetou
         </Retweeted>
@@ -15,27 +36,27 @@ const Tweet: React.FC = () => {
             <Avatar />
             <Content>
                 <Header>
-                    <strong>Emilly Monteiro</strong>
-                    <span>emymonteiro.sweetie@gmail.com</span>
+                    <strong>{nome}</strong>
+                    <span>{tag}</span>
                     <Dot />
-                    <time>09 de dez</time>
+                    <time>{time}</time>
                 </Header>
                 <Description>
-                    Meu Post
+                    {desc}
                 </Description>
                 <ImageContent />
                 <Icons>
                     <Status>
                         <CommentIcon />
-                        18
+                        {comments}
                     </Status>
                     <Status>
                         <RetweetIcon />
-                        18
+                        {retweetN}
                     </Status>
                     <Status>
                         <LikeIcon />
-                        999
+                        {like}
                     </Status>
                 </Icons>
             </Content>
